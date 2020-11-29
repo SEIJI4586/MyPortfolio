@@ -9,7 +9,7 @@ import csv
 
 
 def main():
-    df = pd.read_csv('パス', index_col=1)
+    df = pd.read_csv('パス//kabu.csv', index_col=1)
     codelist = df.index.values
     #print(codelist)
     #sample = ['a', 'b', 'c', 'd']
