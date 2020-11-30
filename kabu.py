@@ -102,7 +102,7 @@ def hantei(arunasi):
 
 
 def datahead():
-    with open("パス\\kabu.csv", "w", encoding="utf-8") as f:#ファイルの書き込みヘッダー設定
+    with open("パス\\kabu.csv", "w", encoding="Shift_JIS") as f:#ファイルの書き込みヘッダー設定
         fieldnames = ['銘柄コード', '売り上げ高(2019)', '売り上げ高(2020)', '売り上げ高(2021)', '営業益(2019)', '営業益(2020)', '営業益(2021)', '営業利益率(2019)', '営業利益率(2020)', '営業利益率(2021)', 'ROE(2019)', 'ROE(2020)', 'ROE(2021)']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
